@@ -25,5 +25,11 @@ namespace Playground.iOS
         {
             return tableItems.Length;
         }
+
+        public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath)
+        {
+            new UIAlertView("Row Selected", tableItems[indexPath.Row], null, "OK", null).Show();
+            tableView.DeselectRow(indexPath, true);
+        }
     }
 }
