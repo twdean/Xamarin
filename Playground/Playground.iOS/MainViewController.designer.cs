@@ -20,22 +20,30 @@ namespace Playground.iOS
 
 		[Outlet]
 		UIKit.UILabel labelTitle { get; set; }
+
+		[Outlet]
+		UIKit.UITableView listMain { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (buttonPrev != null) {
-				buttonPrev.Dispose ();
-				buttonPrev = null;
-			}
-
 			if (buttonNext != null) {
 				buttonNext.Dispose ();
 				buttonNext = null;
 			}
 
+			if (buttonPrev != null) {
+				buttonPrev.Dispose ();
+				buttonPrev = null;
+			}
+
 			if (labelTitle != null) {
 				labelTitle.Dispose ();
 				labelTitle = null;
+			}
+
+			if (listMain != null) {
+				listMain.Dispose ();
+				listMain = null;
 			}
 		}
 	}

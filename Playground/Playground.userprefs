@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Playground.iOS/MainViewController.designer.cs">
     <Files>
       <File FileName="Playground.iOS/MainViewController.cs" Line="1" Column="1" />
-      <File FileName="Playground.iOS/AppDelegate.cs" Line="10" Column="10" />
+      <File FileName="Playground.iOS/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="Playground.iOS/MainViewController.designer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
