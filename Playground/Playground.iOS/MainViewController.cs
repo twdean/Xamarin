@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.Drawing;
-
-using Foundation;
+﻿using System;
 using UIKit;
 
 namespace Playground.iOS
@@ -28,9 +24,18 @@ namespace Playground.iOS
 			// Perform any additional setup after loading the view, typically from a nib.
             buttonPrev.TouchUpInside += buttonPrev_TouchUpInside;
             buttonNext.TouchUpInside += buttonNext_TouchUpInside;
+
+		    SetList();
 		}
 
-        void buttonNext_TouchUpInside(object sender, EventArgs e)
+	    private void SetList()
+	    {
+	        var listItems = new[] {"idea 1", "idea 2", "idea 3", "idea 4"};
+            listMain.Source = new TableSource(listItems);
+            
+	    }
+
+	    void buttonNext_TouchUpInside(object sender, EventArgs e)
         {
             labelTitle.Text = "Next";
         }
