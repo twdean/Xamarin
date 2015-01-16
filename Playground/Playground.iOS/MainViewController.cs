@@ -30,15 +30,7 @@ namespace Playground.iOS
 
             ideaManager = new IdeaManager();
 
-		    SetList();
 		}
-
-	    private void SetList()
-	    {
-	        var listItems = new[] {"idea 1", "idea 2", "idea 3", "idea 4"};
-            listMain.Source = new TableSource(listItems);
-            
-	    }
 
 	    void buttonNext_TouchUpInside(object sender, EventArgs e)
         {
@@ -49,6 +41,7 @@ namespace Playground.iOS
 	    private void UpdateUI()
 	    {
 	        labelTitle.Text = ideaManager.Current.Title;
+	        textIdeaDescription.Text = ideaManager.Current.Description;
 	    }
 
 	    void buttonPrev_TouchUpInside(object sender, EventArgs e)

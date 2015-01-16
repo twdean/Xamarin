@@ -51,7 +51,7 @@
         public void MoveNext()
         {
             if (_currentIndex < _ideas.Length - 1)
-                --_currentIndex;
+                _currentIndex++;
         }
 
         public Idea Current
