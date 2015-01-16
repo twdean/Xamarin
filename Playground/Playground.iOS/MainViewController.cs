@@ -1,10 +1,13 @@
 ﻿using System;
 using UIKit;
+using IdeasLibrary;
 
 namespace Playground.iOS
 {
 	public partial class MainViewController : UIViewController
 	{
+	    private IdeaManager ideaManager;
+
 		public MainViewController () : base ("MainViewController", null)
 		{
 		}
@@ -25,6 +28,8 @@ namespace Playground.iOS
             buttonPrev.TouchUpInside += buttonPrev_TouchUpInside;
             buttonNext.TouchUpInside += buttonNext_TouchUpInside;
 
+            ideaManager = new IdeaManager();
+
 		    SetList();
 		}
 
@@ -37,12 +42,19 @@ namespace Playground.iOS
 
 	    void buttonNext_TouchUpInside(object sender, EventArgs e)
         {
-            labelTitle.Text = "Next";
+            ideaManager.MoveNext();
+	        UpdateUI();
         }
 
-        void buttonPrev_TouchUpInside(object sender, EventArgs e)
+	    private void UpdateUI()
+	    {
+	        labelTitle.Text = ideaManager.Current.Title;
+	    }
+
+	    void buttonPrev_TouchUpInside(object sender, EventArgs e)
         {
-            labelTitle.Text = "Prev";
+            ideaManager.MovePrev();
+            UpdateUI();
         }
 	}
 }

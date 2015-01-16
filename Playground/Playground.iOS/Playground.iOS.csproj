@@ -109,4 +109,10 @@
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdeasLibrary\IdeasLibrary.csproj">
+      <Project>{429ddd0a-3a1f-4cc4-8c62-f8d012a212a6}</Project>
+      <Name>IdeasLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
