@@ -23,6 +23,9 @@ namespace Playground.iOS
 
 		[Outlet]
 		UIKit.UITableView listMain { get; set; }
+
+		[Outlet]
+		UIKit.UITextView textIdeaDescription { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
@@ -44,6 +47,11 @@ namespace Playground.iOS
 			if (listMain != null) {
 				listMain.Dispose ();
 				listMain = null;
+			}
+
+			if (textIdeaDescription != null) {
+				textIdeaDescription.Dispose ();
+				textIdeaDescription = null;
 			}
 		}
 	}
