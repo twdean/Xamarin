@@ -1,13 +1,17 @@
-﻿namespace IdeasLibrary
+﻿using System;
+
+namespace IdeasLibrary
 {
     public class IdeaManager
     {
         private readonly Idea[] _ideas;
         private int _currentIndex = 0;
+        private readonly int _lastIndex;
 
         public IdeaManager()
         {
             _ideas = InitIdeas();
+            _lastIndex = _ideas.Length - 1;
         }
 
         private Idea[] InitIdeas()
@@ -37,6 +41,11 @@
             return initIdeas;
         }
 
+        public int Length
+        {
+            get { return _ideas.Length; }
+        }
+
         public void MoveFirst()
         {
             _currentIndex = 0;
@@ -50,13 +59,45 @@
 
         public void MoveNext()
         {
-            if (_currentIndex < _ideas.Length - 1)
+            if (_currentIndex < _lastIndex)
                 _currentIndex++;
+        }
+
+        public void MoveTo(int position)
+        {
+            if (position >= 0 && position  <= _lastIndex)
+            {
+                _currentIndex = position;
+            }
+            else
+            {
+                throw new IndexOutOfRangeException(String.Format("{0} is an invalid position.  Must be between 0 and {1}", position, _lastIndex));
+            }
         }
 
         public Idea Current
         {
             get { return _ideas[_currentIndex]; }
+        }
+
+        public int CurrentPosition
+        {
+            get { return _currentIndex; }
+        }
+
+        public bool CurrentPrev
+        {
+            get { return _currentIndex > 0; }
+        }
+
+        public bool CanMoveNext
+        {
+            get { return _currentIndex < _lastIndex; }
+        }
+
+        public bool CanMovePrev
+        {
+            get { return _currentIndex > 0; }
         }
 
     }

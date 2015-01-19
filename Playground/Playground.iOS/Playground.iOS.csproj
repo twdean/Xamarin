@@ -87,6 +87,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IdeaPagerViewController.cs" />
+    <Compile Include="IdeaPagerViewControllerDataSource.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="TableSource.cs" />

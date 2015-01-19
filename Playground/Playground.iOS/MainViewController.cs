@@ -6,7 +6,9 @@ namespace Playground.iOS
 {
 	public partial class MainViewController : UIViewController
 	{
-	    private IdeaManager ideaManager;
+	    //private IdeaManager ideaManager;
+        public Idea idea { get; set; }
+        public int ideaPosition { get; set; }
 
 		public MainViewController () : base ("MainViewController", null)
 		{
@@ -25,30 +27,16 @@ namespace Playground.iOS
 			base.ViewDidLoad ();
 			
 			// Perform any additional setup after loading the view, typically from a nib.
-            buttonPrev.TouchUpInside += buttonPrev_TouchUpInside;
-            buttonNext.TouchUpInside += buttonNext_TouchUpInside;
-
-            ideaManager = new IdeaManager();
-
+            //ideaManager = new IdeaManager();
+            UpdateUI();
 		}
-
-	    void buttonNext_TouchUpInside(object sender, EventArgs e)
-        {
-            ideaManager.MoveNext();
-	        UpdateUI();
-        }
 
 	    private void UpdateUI()
 	    {
-	        labelTitle.Text = ideaManager.Current.Title;
-	        textIdeaDescription.Text = ideaManager.Current.Description;
+	        labelTitle.Text = idea.Title;
+	        textIdeaDescription.Text = idea.Description;
 	    }
 
-	    void buttonPrev_TouchUpInside(object sender, EventArgs e)
-        {
-            ideaManager.MovePrev();
-            UpdateUI();
-        }
 	}
 }
 
