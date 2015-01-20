@@ -38,6 +38,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Idea.cs" />
+    <Compile Include="IdeaCategory.cs" />
+    <Compile Include="IdeaCategoryManager.cs" />
     <Compile Include="IdeaManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

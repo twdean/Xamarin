@@ -86,6 +86,8 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CategoryViewController.cs" />
+    <Compile Include="CategoryViewSource.cs" />
     <Compile Include="IdeaPagerViewController.cs" />
     <Compile Include="IdeaPagerViewControllerDataSource.cs" />
     <Compile Include="Main.cs" />

@@ -15,7 +15,9 @@ namespace Playground.iOS
     {
         // class-level declarations
         UIWindow window;
-		IdeaPagerViewController mainViewController;
+		//IdeaPagerViewController mainViewController;
+
+        public UINavigationController RootNavigationController { get; private set; }
 
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,8 +31,12 @@ namespace Playground.iOS
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            mainViewController = new IdeaPagerViewController();
-			window.RootViewController  = mainViewController;
+            RootNavigationController = new UINavigationController();
+            var mainViewController = new CategoryViewController();
+
+            RootNavigationController.PushViewController(mainViewController, false);
+
+            window.RootViewController = RootNavigationController;
 
             // make the window visible
             window.MakeKeyAndVisible();

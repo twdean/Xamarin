@@ -8,30 +8,77 @@ namespace IdeasLibrary
         private int _currentIndex = 0;
         private readonly int _lastIndex;
 
-        public IdeaManager()
+        public IdeaManager(string category)
         {
-            _ideas = InitIdeas();
-            _lastIndex = _ideas.Length - 1;
+            switch (category)
+            {
+                case "Mobile":
+                    _ideas = InitMobileIdeas();
+                    break;
+                case "Web":
+                    InitWebIdeas();
+                    break;
+                case "Social":
+                    _ideas = InitSocialIdeas();
+                    break;
+            }
+
+            if(_ideas != null)
+                _lastIndex = _ideas.Length - 1;
         }
 
-        private Idea[] InitIdeas()
+        private Idea[] InitMobileIdeas()
         {
             var initIdeas = new Idea[]
             {
                 new Idea
                 {
+                    Category = "Mobile",
                     Title = "ThinkTank",
                     Description = "Application for capturing ideas and sharing them with others in your network",
                     IsPublic = false
                 },
                 new Idea
                 {
+                    Category = "Web",
                     Title = "Switchboard",
                     Description = "Website for routing messages to appropriate medium",
                     IsPublic = false
                 }, 
                 new Idea
                 {
+                    Category = "Social",
+                    Title = "MeleeMe",
+                    Description = "Social role playing/battling app",
+                    IsPublic = false
+                } 
+            };
+
+            return initIdeas;
+
+        }
+
+        private Idea[] InitWebIdeas()
+        {
+            var initIdeas = new Idea[]
+            {
+                new Idea
+                {
+                    Category = "Mobile",
+                    Title = "ThinkTank",
+                    Description = "Application for capturing ideas and sharing them with others in your network",
+                    IsPublic = false
+                },
+                new Idea
+                {
+                    Category = "Web",
+                    Title = "Switchboard",
+                    Description = "Website for routing messages to appropriate medium",
+                    IsPublic = false
+                }, 
+                new Idea
+                {
+                    Category = "Social",
                     Title = "MeleeMe",
                     Description = "Social role playing/battling app",
                     IsPublic = false
@@ -40,6 +87,37 @@ namespace IdeasLibrary
 
             return initIdeas;
         }
+
+        private Idea[] InitSocialIdeas()
+        {
+            var initIdeas = new Idea[]
+            {
+                new Idea
+                {
+                    Category = "Mobile",
+                    Title = "ThinkTank",
+                    Description = "Application for capturing ideas and sharing them with others in your network",
+                    IsPublic = false
+                },
+                new Idea
+                {
+                    Category = "Web",
+                    Title = "Switchboard",
+                    Description = "Website for routing messages to appropriate medium",
+                    IsPublic = false
+                }, 
+                new Idea
+                {
+                    Category = "Social",
+                    Title = "MeleeMe",
+                    Description = "Social role playing/battling app",
+                    IsPublic = false
+                } 
+            };
+
+            return initIdeas;
+        }
+
 
         public int Length
         {

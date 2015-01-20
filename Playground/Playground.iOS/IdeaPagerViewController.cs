@@ -15,9 +15,11 @@ namespace Playground.iOS
     {
         private UIPageViewController pageViewController;
         private IdeaManager ideaManager;
+        private string _categoryTitle;
 
-        public IdeaPagerViewController()
+        public IdeaPagerViewController(string categoryTitle)
         {
+            _categoryTitle = categoryTitle;
         }
 
         public override void DidReceiveMemoryWarning()
@@ -42,7 +44,7 @@ namespace Playground.iOS
 
             View.AddSubview(pageViewController.View);
 
-            ideaManager = new IdeaManager();
+            ideaManager = new IdeaManager(_categoryTitle);
             ideaManager.MoveFirst();
 
             var dataSource = new IdeaPagerViewControllerDataSource(ideaManager);
