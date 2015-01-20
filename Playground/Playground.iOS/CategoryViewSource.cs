@@ -37,7 +37,9 @@ namespace Playground.iOS
             _categoryManager.MoveTo(indexPath.Row);
             var ideaPagerViewController = new IdeaPagerViewController(_categoryManager.Current.Title);
 
-            base.RowSelected(tableView, indexPath);
+
+            var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
+            appDelegate.RootNavigationController.PushViewController(ideaPagerViewController, true);
         }
     }
 }

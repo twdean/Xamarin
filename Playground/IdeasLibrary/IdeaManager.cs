@@ -16,7 +16,7 @@ namespace IdeasLibrary
                     _ideas = InitMobileIdeas();
                     break;
                 case "Web":
-                    InitWebIdeas();
+                    _ideas = InitWebIdeas();
                     break;
                 case "Social":
                     _ideas = InitSocialIdeas();

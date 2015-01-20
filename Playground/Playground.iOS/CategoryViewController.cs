@@ -28,6 +28,9 @@ namespace Playground.iOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            Title = "Categories";
+
             ideaCategoryManager = new IdeaCategoryManager();
             var tableView = this.View as UITableView;
 
