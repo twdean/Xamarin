@@ -4,27 +4,32 @@ namespace IdeasLibrary
 {
     public class IdeaManager
     {
-        private readonly Idea[] _ideas;
+        private Idea[] _ideas;
         private int _currentIndex = 0;
         private readonly int _lastIndex;
 
         public IdeaManager(string category)
+        {
+            GetIdeas(category);
+
+            if(_ideas != null)
+                _lastIndex = _ideas.Length - 1;
+        }
+
+        private void GetIdeas(string category)
         {
             switch (category)
             {
                 case "Mobile":
                     _ideas = InitMobileIdeas();
                     break;
-                case "Web":
-                    _ideas = InitWebIdeas();
-                    break;
                 case "Social":
                     _ideas = InitSocialIdeas();
                     break;
+                case "Web":
+                    _ideas = InitWebIdeas();
+                    break;
             }
-
-            if(_ideas != null)
-                _lastIndex = _ideas.Length - 1;
         }
 
         private Idea[] InitMobileIdeas()

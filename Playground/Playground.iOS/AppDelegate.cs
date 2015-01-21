@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using MonoTouch.Dialog;
 using Foundation;
 using UIKit;
 
@@ -15,7 +16,8 @@ namespace Playground.iOS
     {
         // class-level declarations
         UIWindow window;
-		//IdeaPagerViewController mainViewController;
+        private EntryElement login;
+        private EntryElement password;
 
         public UINavigationController RootNavigationController { get; private set; }
 
@@ -31,12 +33,35 @@ namespace Playground.iOS
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            RootNavigationController = new UINavigationController();
-            var mainViewController = new CategoryViewController();
+            //RootNavigationController = new UINavigationController();
+            //var mainViewController = new CategoryViewController();
 
-            RootNavigationController.PushViewController(mainViewController, false);
+            //RootNavigationController.PushViewController(mainViewController, false);
 
-            window.RootViewController = RootNavigationController;
+            //window.RootViewController = RootNavigationController;
+            window.RootViewController = new DialogViewController(new RootElement("Login")
+            {
+                new Section("Credentials")
+                {
+                    (login = new EntryElement("Login", "Enter your login", "")),
+                    (password = new EntryElement("Password","Enter your password","",true))
+                },
+                new Section()
+                {
+                    new StringElement("Login", delegate
+                    {
+                        RootNavigationController = new UINavigationController();
+                        var mainViewController = new CategoryViewController();
+
+                        RootNavigationController.PushViewController(mainViewController, false);
+
+                        window.RootViewController = RootNavigationController;
+                    })
+                }
+            });
+
+            ;
+
 
             // make the window visible
             window.MakeKeyAndVisible();

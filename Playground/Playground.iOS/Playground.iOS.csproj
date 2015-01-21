@@ -88,7 +88,9 @@
   <ItemGroup>
     <Compile Include="CategoryViewController.cs" />
     <Compile Include="CategoryViewSource.cs" />
+    <Compile Include="ideaDialogViewController.cs" />
     <Compile Include="IdeaPagerViewController.cs" />
+    <Compile Include="IdeaPagerDialogViewControllerDataSource.cs" />
     <Compile Include="IdeaPagerViewControllerDataSource.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
@@ -107,6 +109,7 @@
     <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="MonoTouch.Dialog-1" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />

@@ -1,4 +1,5 @@
 ﻿using System;
+using MonoTouch.Dialog;
 using UIKit;
 using IdeasLibrary;
 
@@ -33,8 +34,8 @@ namespace Playground.iOS
 
 	    private void UpdateUI()
 	    {
-	        labelTitle.Text = idea.Title;
-	        textIdeaDescription.Text = idea.Description;
+            labelTitle.Text = idea.Title;
+            textIdeaDescription.Text = idea.Description;
 	    }
 
 	}
