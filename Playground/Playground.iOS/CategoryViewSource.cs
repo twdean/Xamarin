@@ -22,7 +22,7 @@ namespace Playground.iOS
 
 
             UITableViewCell cell = tableView.DequeueReusableCell(cellId);
-            if(cell == null)
+            if (cell == null)
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellId);
 
             _categoryManager.MoveTo(indexPath.Row);
@@ -43,12 +43,23 @@ namespace Playground.iOS
 
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
+            var refreshButton = new UIBarButtonItem(UIBarButtonSystemItem.Refresh, (s, e) => Console.WriteLine(
+                "Refresh clicked"));
+
+            var pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, (s, e) => Console.WriteLine(
+                "Pause clicked"));
+
+            var spacer = new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 };
+
             _categoryManager.MoveTo(indexPath.Row);
             var ideaPagerViewController = new IdeaPagerViewController(_categoryManager.Current.Title);
 
 
             var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
             appDelegate.RootNavigationController.PushViewController(ideaPagerViewController, true);
+            appDelegate.RootNavigationController.SetToolbarItems(new UIBarButtonItem[] {
+                refreshButton, spacer, pauseButton
+            }, false);
         }
 
         public override void CommitEditingStyle(UITableView tableView, UITableViewCellEditingStyle editingStyle, Foundation.NSIndexPath indexPath)
