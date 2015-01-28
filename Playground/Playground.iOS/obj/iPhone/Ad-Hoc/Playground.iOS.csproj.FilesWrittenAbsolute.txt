@@ -1,0 +1,7 @@
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/obj/iPhone/Ad-Hoc/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/obj/iPhone/Ad-Hoc/ibtool/MainViewController.nib
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/obj/iPhone/Ad-Hoc/Default-568h@2x.png
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/bin/iPhone/Ad-Hoc/PlaygroundiOS.exe
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/obj/iPhone/Ad-Hoc/PlaygroundiOS.exe
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/bin/iPhone/Ad-Hoc/IdeasLibrary.dll
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Playground/Playground.iOS/bin/iPhone/Ad-Hoc/IdeasLibrary.dll.mdb
