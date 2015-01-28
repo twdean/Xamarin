@@ -1,4 +1,5 @@
-﻿namespace IdeasLibrary
+﻿
+namespace IdeasLibrary
 {
     public class Idea
     {

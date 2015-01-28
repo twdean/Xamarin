@@ -1,0 +1,13 @@
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhoneSimulator\Debug\PlaygroundiOS.exe
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhoneSimulator\Debug\PlaygroundiOS.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhoneSimulator\Debug\IdeasLibrary.dll
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhoneSimulator\Debug\IdeasLibrary.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhoneSimulator\Debug\IdeasLibrary.dll.mdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\ibtool\MainViewController.nib
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\Default-568h@2x.png
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\PlaygroundiOS.exe
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\PlaygroundiOS.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\camera-icon.png
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\coke-machine-icon.png
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\vinyl-icon.png
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhoneSimulator\Debug\Playground.iOS.csprojResolveAssemblyReference.cache

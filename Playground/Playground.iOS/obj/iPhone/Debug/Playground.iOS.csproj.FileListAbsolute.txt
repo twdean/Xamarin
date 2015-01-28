@@ -1,0 +1,10 @@
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhone\Debug\PlaygroundiOS.exe
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhone\Debug\PlaygroundiOS.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\ibtool\MainViewController.plist
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\ibtool\MainViewController.nib
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\Default-568h@2x.png
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\Playground.iOS.csprojResolveAssemblyReference.cache
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\PlaygroundiOS.exe
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\obj\iPhone\Debug\PlaygroundiOS.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhone\Debug\IdeasLibrary.dll
+C:\Development\Level 9\Level9\Xamarin\Playground\Playground.iOS\bin\iPhone\Debug\IdeasLibrary.pdb

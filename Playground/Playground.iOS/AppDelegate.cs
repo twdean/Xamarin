@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using MonoTouch.Dialog;
+﻿using MonoTouch.Dialog;
 using Foundation;
 using UIKit;
 
@@ -33,34 +29,46 @@ namespace Playground.iOS
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            //RootNavigationController = new UINavigationController();
-            //var mainViewController = new CategoryViewController();
+            RootNavigationController = new UINavigationController();
 
-            //RootNavigationController.PushViewController(mainViewController, false);
+            var mainViewController = new CategoryViewController();
+            mainViewController.NavigationItem.SetRightBarButtonItem(
+                            new UIBarButtonItem("Right",
+                                UIBarButtonItemStyle.Plain,
+                                (sender, args) =>
+                                {
+                                    // button was clicked
+                                }), true);
 
-            //window.RootViewController = RootNavigationController;
-            window.RootViewController = new DialogViewController(new RootElement("Login")
-            {
-                new Section("Credentials")
-                {
-                    (login = new EntryElement("Login", "Enter your login", "")),
-                    (password = new EntryElement("Password","Enter your password","",true))
-                },
-                new Section()
-                {
-                    new StringElement("Login", delegate
-                    {
-                        RootNavigationController = new UINavigationController();
-                        var mainViewController = new CategoryViewController();
+            RootNavigationController.PushViewController(mainViewController, false);
 
-                        RootNavigationController.PushViewController(mainViewController, false);
+            window.RootViewController = RootNavigationController;
+            //window.RootViewController = new DialogViewController(new RootElement("Login")
+            //{
+            //    new Section("Credentials")
+            //    {
+            //        (login = new EntryElement("Login", "Enter your login", "")),
+            //        (password = new EntryElement("Password","Enter your password","",true))
+            //    },
+            //    new Section()
+            //    {
+            //        new StringElement("Login", delegate
+            //        {
+            //            RootNavigationController = new UINavigationController();
+            //            RootNavigationController.NavigationItem.SetRightBarButtonItem(
+            //                new UIBarButtonItem("Right", 
+            //                    UIBarButtonItemStyle.Plain, 
+            //                    (sender,args) => {
+            //                       // button was clicked
+            //                    }), true);
+            //            var mainViewController = new CategoryViewController();
 
-                        window.RootViewController = RootNavigationController;
-                    })
-                }
-            });
+            //            RootNavigationController.PushViewController(mainViewController, false);
 
-            ;
+            //            window.RootViewController = RootNavigationController;
+            //        })
+            //    }
+            //});
 
 
             // make the window visible

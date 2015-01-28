@@ -57,9 +57,6 @@ namespace Playground.iOS
 
             var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
             appDelegate.RootNavigationController.PushViewController(ideaPagerViewController, true);
-            appDelegate.RootNavigationController.SetToolbarItems(new UIBarButtonItem[] {
-                refreshButton, spacer, pauseButton
-            }, false);
         }
 
         public override void CommitEditingStyle(UITableView tableView, UITableViewCellEditingStyle editingStyle, Foundation.NSIndexPath indexPath)

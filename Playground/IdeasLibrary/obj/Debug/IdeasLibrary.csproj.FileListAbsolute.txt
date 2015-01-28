@@ -1,0 +1,5 @@
+C:\Development\Level 9\Level9\Xamarin\Playground\IdeasLibrary\bin\Debug\IdeasLibrary.dll
+C:\Development\Level 9\Level9\Xamarin\Playground\IdeasLibrary\bin\Debug\IdeasLibrary.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\IdeasLibrary\obj\Debug\IdeasLibrary.dll
+C:\Development\Level 9\Level9\Xamarin\Playground\IdeasLibrary\obj\Debug\IdeasLibrary.pdb
+C:\Development\Level 9\Level9\Xamarin\Playground\IdeasLibrary\obj\Debug\IdeasLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,30 @@
+Idea storage and collaboration app  
+
+
+Names:
+1.  ThinkTank
+2.  Cupcake
+
+
+Overview
+To allow a user to quickly take note of an idea they have had for an application.  The user will be able to 
+categorize / tag the idea so it can be found easily later.
+
+1.  Web
+2.  Mobile
+3.  Desktop
+4.  Games
+
+The idea can be flagged as private or public.  If the idea is public than other people who have the app or go to the website can view these ideas and comment on them.  The originator of the idea will be able to see the comments in their application and rate them. The rating system is intended to build
+a community.
+
+From the idea the person will be able to create a github repository.
+
+
+User flows
+1.  User opens the app for the first time and is presented with a "General" category.  The user can create/edit/delete categories.  The user must select a category before taking down their idea.  Once the category is selected/created the user is presented with a simple screen:
+
+1.  Title
+2.  Description
+3.  Scope (private/public)
+

@@ -1,0 +1,5 @@
+C:\Development\Level 9\Level9\Xamarin\Cupcake\CupcakePCL\bin\Debug\CupcakePCL.dll
+C:\Development\Level 9\Level9\Xamarin\Cupcake\CupcakePCL\bin\Debug\CupcakePCL.pdb
+C:\Development\Level 9\Level9\Xamarin\Cupcake\CupcakePCL\bin\Debug\SQLite.Net.dll
+C:\Development\Level 9\Level9\Xamarin\Cupcake\CupcakePCL\obj\Debug\CupcakePCL.dll
+C:\Development\Level 9\Level9\Xamarin\Cupcake\CupcakePCL\obj\Debug\CupcakePCL.pdb
