@@ -14,7 +14,8 @@ namespace Cupcake.iOS
     public partial class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
-        UIWindow window;
+		UIWindow window;
+		MainViewController mainViewController;
 
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,7 +30,7 @@ namespace Cupcake.iOS
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             // If you have defined a view, add it here:
-            // window.RootViewController  = navigationController;
+            window.RootViewController  = mainViewController;
 
             // make the window visible
             window.MakeKeyAndVisible();
