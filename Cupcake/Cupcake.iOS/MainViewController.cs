@@ -24,9 +24,27 @@ namespace Cupcake.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+            buttonAddIdea.TouchUpInside += buttonAddIdea_TouchUpInside;
+            buttonViewIdeas.TouchUpInside += buttonViewIdeas_TouchUpInside;
+
 			
-			// Perform any additional setup after loading the view, typically from a nib.
 		}
+
+        void buttonViewIdeas_TouchUpInside(object sender, EventArgs e)
+        {
+            var addIdeaController = new NewIdeaViewController();
+            var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
+            appDelegate.RootNavigationController.PushViewController(addIdeaController, true);
+
+        }
+
+        void buttonAddIdea_TouchUpInside(object sender, EventArgs e)
+        {
+            var addIdeaController = new NewIdeaViewController();
+            var appDelegate = UIApplication.SharedApplication.Delegate as AppDelegate;
+            appDelegate.RootNavigationController.PushViewController(addIdeaController, true);
+        }
 	}
 }
 

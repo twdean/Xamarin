@@ -17,6 +17,9 @@ namespace Cupcake.iOS
 		UIWindow window;
 		MainViewController mainViewController;
 
+        public UINavigationController RootNavigationController { get; private set; }
+
+
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
         // method you should instantiate the window, load the UI into it and then make the window
@@ -30,7 +33,13 @@ namespace Cupcake.iOS
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             // If you have defined a view, add it here:
-            window.RootViewController  = mainViewController;
+            RootNavigationController = new UINavigationController();
+            var mainViewController = new MainViewController();
+
+            RootNavigationController.PushViewController(mainViewController, false);
+            window.RootViewController = RootNavigationController;
+
+            
 
             // make the window visible
             window.MakeKeyAndVisible();

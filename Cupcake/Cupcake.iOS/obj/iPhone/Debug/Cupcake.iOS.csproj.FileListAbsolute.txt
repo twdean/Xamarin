@@ -3,3 +3,5 @@ C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\bin\iPhone\Debug\Cupca
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhone\Debug\Default-568h@2x.png
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhone\Debug\CupcakeiOS.exe
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhone\Debug\CupcakeiOS.pdb
+C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhone\Debug\ibtool\MainViewController.nib
+C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhone\Debug\Cupcake.iOS.csprojResolveAssemblyReference.cache
