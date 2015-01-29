@@ -34,7 +34,7 @@ namespace Cupcake.iOS
 
             // If you have defined a view, add it here:
             RootNavigationController = new UINavigationController();
-            var mainViewController = new MainViewController();
+            mainViewController = new MainViewController();
 
             RootNavigationController.PushViewController(mainViewController, false);
             window.RootViewController = RootNavigationController;
