@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="CupcakePCL/CupcakePCL.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cupcake.iOS/AddIdeaViewController.cs">
+    <Files>
+      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="Cupcake.iOS/MainViewController.cs" Line="1" Column="1" />
+      <File FileName="Cupcake.iOS/MainViewController.designer.cs" Line="1" Column="1" />
+      <File FileName="Cupcake.iOS/NewIdeaViewController.cs" Line="1" Column="1" />
+      <File FileName="Cupcake.iOS/AddIdeaViewController.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
