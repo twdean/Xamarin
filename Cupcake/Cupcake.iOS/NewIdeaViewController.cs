@@ -1,28 +1,23 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿using System;
 using MonoTouch.Dialog;
-
-using Foundation;
 using UIKit;
 
 namespace Cupcake.iOS
 {
-	public partial class NewIdeaViewController : DialogViewController
+	public class NewIdeaViewController : DialogViewController
 	{
 		public NewIdeaViewController () : base (UITableViewStyle.Grouped, null)
 		{
 			Root = new RootElement ("NewIdeaViewController") {
-				new Section ("First Section") {
-					new StringElement ("Hello", () => {
-						new UIAlertView ("Hola", "Thanks for tapping!", null, "Continue").Show (); 
-					}),
-					new EntryElement ("Name", "Enter your name", String.Empty)
+				new Section ("Idea") {
+					new EntryElement ("Title", "Give it a name", String.Empty),
+                    
+
 				},
-				new Section ("Second Section") {
-				},
+				new Section () {
+                    new StringElement("Save",
+                        () => new UIAlertView("Saving idea", "Your idea has been saved", null, "ok", null).Show())
+                },
 			};
 		}
 	}

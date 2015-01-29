@@ -111,4 +111,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="MainViewController.xib" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Elements\" />
+  </ItemGroup>
 </Project>
