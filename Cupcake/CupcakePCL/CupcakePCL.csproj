@@ -34,20 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DataManager.cs" />
-    <Compile Include="Idea.cs" />
+    <Compile Include="BL\IBusinessEntity.cs" />
+    <Compile Include="BL\Idea.cs" />
+    <Compile Include="BL\IdeaManager.cs" />
+    <Compile Include="DL\CupcakeDatabase.cs" />
+    <Compile Include="DL\IdeaRepository.cs" />
+    <Compile Include="DL\SQLite.cs" />
     <Compile Include="IdeaCategory.cs" />
     <Compile Include="IdeaCategoryManager.cs" />
     <Compile Include="IdeaManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="SQLite.Net">
       <HintPath>..\packages\SQLite.Net-PCL.2.5\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

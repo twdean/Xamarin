@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Drawing;
-
+using Cupcake.iOS.Screens;
 using Foundation;
 using UIKit;
 
@@ -35,8 +35,10 @@ namespace Cupcake.iOS
 
         void buttonViewIdeas_TouchUpInside(object sender, EventArgs e)
         {
-            var addIdeaController = new NewIdeaViewController();
-            NavigationController.PushViewController(addIdeaController, true);
+            var ideas = AppDelegate.Current.IdeaMgr.GetIdeas();
+
+            var viewIdeaListController = new IdeaListViewController(ideas);
+            NavigationController.PushViewController(viewIdeaListController, true);
 
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
+using CupcakePCL.BL;
 
-namespace IdeasLibrary
+namespace CupcakePCL
 {
     public class IdeaManager
     {

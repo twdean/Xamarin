@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+using System.IO;
+using CupcakePCL;
+using CupcakePCL.DL.SQLite;
 using Foundation;
 using UIKit;
 
@@ -19,6 +19,11 @@ namespace Cupcake.iOS
 
         public UINavigationController RootNavigationController { get; private set; }
 
+        public static AppDelegate Current { get; private set; }
+        public CupcakePCL.BL.Managers.IdeaManager IdeaMgr { get; set; }
+        Connection conn;
+
+
 
         //
         // This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,11 +34,32 @@ namespace Cupcake.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Current = this;
+
             // create a new window instance based on the screen size
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
             // If you have defined a view, add it here:
             RootNavigationController = new UINavigationController();
+            
+            // Styling
+            UINavigationBar.Appearance.TintColor = UIColor.FromRGB(38, 117, 255); // nice blue
+            UITextAttributes ta = new UITextAttributes();
+            ta.Font = UIFont.FromName("AmericanTypewriter-Bold", 0f);
+            UINavigationBar.Appearance.SetTitleTextAttributes(ta);
+            ta.Font = UIFont.FromName("AmericanTypewriter", 0f);
+            UIBarButtonItem.Appearance.SetTitleTextAttributes(ta, UIControlState.Normal);
+
+            var sqliteFilename = "CupcakeDB.db3";
+            // we need to put in /Library/ on iOS5.1 to meet Apple's iCloud terms
+            // (they don't want non-user-generated data in Documents)
+            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
+            string libraryPath = Path.Combine(documentsPath, "../Library/"); // Library folder
+            var path = Path.Combine(libraryPath, sqliteFilename);
+            conn = new Connection(path);
+            IdeaMgr = new CupcakePCL.BL.Managers.IdeaManager(conn);
+
+
             mainViewController = new MainViewController();
 
             RootNavigationController.PushViewController(mainViewController, false);

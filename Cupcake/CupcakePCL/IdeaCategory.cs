@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace IdeasLibrary
+namespace CupcakePCL
 {
     public class IdeaCategory
     {
