@@ -50,5 +50,34 @@ namespace Cupcake.iOS.Screens
 
             AppDelegate.Current.RootNavigationController.PushViewController(ideaViewController, true);
         }
+
+        public override void CommitEditingStyle(UITableView tableView, UITableViewCellEditingStyle editingStyle, Foundation.NSIndexPath indexPath)
+        {
+            switch (editingStyle)
+            {
+                case UITableViewCellEditingStyle.Delete:
+                    // remove the item from the underlying data source
+                    //tableItems.RemoveAt(indexPath.Row);
+                    // delete the row from the table
+                    AppDelegate.Current.IdeaMgr.DeleteIdea(_ideas[indexPath.Row].ID);
+                    _ideas.RemoveAt(indexPath.Row);
+
+                    //RowsInSection(tableView,)
+                    tableView.DeleteRows(new[] { indexPath }, UITableViewRowAnimation.Fade);
+
+
+                    break;
+                case UITableViewCellEditingStyle.None:
+                    Console.WriteLine("CommitEditingStyle:None called");
+                    break;
+            }
+        }
+
+
+        public override bool CanEditRow(UITableView tableView, NSIndexPath indexPath)
+        {
+            return true;
+        }
+
     }
 }

@@ -98,10 +98,6 @@
       <DependentUpon>MainViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\NewIdeaViewController.cs" />
-    <Compile Include="Screens\AddIdeaViewController.cs" />
-    <Compile Include="Screens\AddIdeaViewController.designer.cs">
-      <DependentUpon>AddIdeaViewController.cs</DependentUpon>
-    </Compile>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,7 +119,6 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <InterfaceDefinition Include="Screens\MainViewController.xib" />
-    <InterfaceDefinition Include="Screens\AddIdeaViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CupcakePCL\CupcakePCL.csproj">

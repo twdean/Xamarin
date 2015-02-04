@@ -37,7 +37,6 @@ namespace Cupcake.iOS.Screens
             var tableView = this.View as UITableView;
 
             tableView.Source = new IdeaListViewSource(_ideas);
-
         }
     }
 }

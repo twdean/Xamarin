@@ -38,6 +38,16 @@ namespace Cupcake.iOS
             var ideas = AppDelegate.Current.IdeaMgr.GetIdeas();
 
             var viewIdeaListController = new IdeaListViewController(ideas);
+
+            viewIdeaListController.NavigationItem.SetRightBarButtonItem(
+                new UIBarButtonItem("Add",
+                    UIBarButtonItemStyle.Bordered,
+                    (s, args) =>
+                    {
+                        var addIdeaController = new NewIdeaViewController();
+                        NavigationController.PushViewController(addIdeaController, true);
+                    }), true);
+
             NavigationController.PushViewController(viewIdeaListController, true);
 
         }
