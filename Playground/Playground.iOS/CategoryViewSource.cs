@@ -17,10 +17,6 @@ namespace Playground.iOS
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            //tableView.SeparatorColor = UIColor.Blue;
-            //tableView.SeparatorStyle = UITableViewCellSeparatorStyle.DoubleLineEtched;
-
-
             UITableViewCell cell = tableView.DequeueReusableCell(cellId);
             if (cell == null)
                 cell = new UITableViewCell(UITableViewCellStyle.Subtitle, cellId);
