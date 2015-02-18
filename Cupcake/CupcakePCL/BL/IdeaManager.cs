@@ -23,8 +23,23 @@ namespace CupcakePCL.BL.Managers
             return new List<Idea>(repository.GetIdeas());
         }
 
-        public int SaveIdea(Idea item)
+        public int SaveIdea(Idea item, IConnectivity connectivity)
         {
+            if (connectivity.IsConnected())
+            {
+                if (item.ID != 0)
+                {
+                    if (item.IsPublic)
+                    {
+                        //push to public database
+                    }
+                    else
+                    {
+                        //remove from public database
+                    }
+                }
+            }
+
             return repository.SaveIdea(item);
         }
 

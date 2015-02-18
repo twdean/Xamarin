@@ -60,11 +60,13 @@ namespace Cupcake.iOS
                     Title = title,
                     Description = desc,
                     IsPublic = isPublic
-                });
+                }, new IOSConnectivity());
+
 
                 new UIAlertView("Saved", "Your idea has been saved", null, "ok", null).Show();
 
                 var ideas = AppDelegate.Current.IdeaMgr.GetIdeas();
+
 
                 var viewIdeaListController = new IdeaListViewController(ideas);
                 NavigationController.PushViewController(viewIdeaListController, true);
