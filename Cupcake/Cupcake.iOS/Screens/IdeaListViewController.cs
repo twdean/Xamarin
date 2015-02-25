@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Drawing;
+using CoreGraphics;
 using CupcakePCL.BL;
 using UIKit;
 using Foundation;
@@ -13,7 +15,7 @@ namespace Cupcake.iOS.Screens
     {
         public IList<Idea> _ideas { get; set; }
 
-        public IdeaListViewController(IList<Idea> ideas )
+        public IdeaListViewController(IList<Idea> ideas)
         {
             _ideas = ideas;
         }
@@ -28,7 +30,6 @@ namespace Cupcake.iOS.Screens
 
         public override void ViewDidLoad()
         {
-
             base.ViewDidLoad();
 
             // Perform any additional setup after loading the view
@@ -37,6 +38,20 @@ namespace Cupcake.iOS.Screens
             var tableView = this.View as UITableView;
 
             tableView.Source = new IdeaListViewSource(_ideas);
+
+            SetToolbarItems(new[] {
+            new UIBarButtonItem(UIBarButtonSystemItem.Add, (s,e) => {
+                var addIdeaController = new NewIdeaViewController();
+                NavigationController.PushViewController(addIdeaController, true);
+            })
+            , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }
+            , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => {
+
+            })
+        }, false);
+
+            NavigationController.ToolbarHidden = false;
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using Cupcake.iOS.Screens;
 using CupcakePCL.BL;
 using MonoTouch.Dialog;
@@ -14,26 +15,52 @@ namespace Cupcake.iOS
             : base(UITableViewStyle.Grouped, null, true)
         {
             var elemTitle = new EntryElement("Title", "Title", "");
-            var elemDescription = new MultilineEntryElement("", "", "");
-            var elemScope = new BooleanElement("Public", false);
+            var desc = new UITextView(new RectangleF(10, 10, 300, 300)) 
+            {
+                Editable = true, 
+                Selectable = true
+            };
 
-            var elemSave = new StringElement("Save", () => SaveIdea(elemTitle.Value, elemDescription.Summary(), elemScope.Value));
+            var submitButton = UIButton.FromType(UIButtonType.RoundedRect);
+            submitButton.Frame = new RectangleF(10, 120, 400, 50);
+            submitButton.SetTitle("Save", UIControlState.Normal); 
+            //var elemDescription = new MultilineEntryElement("", "", "");
+            
+            //var elemScope = new BooleanElement("Public", false);
+
+            //var elemSave = new StringElement("Save", () => SaveIdea(elemTitle.Value, elemDescription.Summary(), elemScope.Value));
 
             Root = new RootElement("New Idea") {
 				new Section ("Idea")
 				{
 				    elemTitle
 				},
-				new Section ("Description 1") {
-                    elemDescription
+				new Section ("Description") {
+                    desc
                 },
-                new Section ("Public"){
-                    elemScope
-                },				
         new Section () {
-                    elemSave
+                    submitButton
                 }
 			};
+        }
+
+        public override void ViewDidLoad()
+        {
+            SetToolbarItems(new[] {
+            new UIBarButtonItem(UIBarButtonSystemItem.Cancel, (s,e) => {
+                var ideas = AppDelegate.Current.IdeaMgr.GetIdeas();
+                var listViewController = new IdeaListViewController(ideas);
+                NavigationController.PushViewController(listViewController, true);
+            })
+            , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }
+            , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => {
+
+            })
+        }, false);
+
+            NavigationController.ToolbarHidden = false;
+
+
         }
 
         public void SaveIdea(string title, string desc, bool isPublic)
