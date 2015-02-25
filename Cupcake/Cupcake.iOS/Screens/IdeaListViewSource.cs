@@ -12,7 +12,7 @@ using Foundation;
 namespace Cupcake.iOS.Screens
 {
     [Register("IdeaListViewController")]
-    public class IdeaListViewSource : UITableViewSource
+    public partial class IdeaListViewSource : UITableViewSource
     {
         const String cellId = "MyIdeaCell";
         public IList<Idea> _ideas { get; set; }

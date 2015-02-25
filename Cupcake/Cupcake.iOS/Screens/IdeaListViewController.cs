@@ -11,7 +11,7 @@ namespace Cupcake.iOS.Screens
 {
 
     [Register("UIViewController1")]
-    public class IdeaListViewController : UITableViewController
+    public partial class IdeaListViewController : UITableViewController
     {
         public IList<Idea> _ideas { get; set; }
 

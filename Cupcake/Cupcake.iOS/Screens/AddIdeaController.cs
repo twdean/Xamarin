@@ -1,4 +1,5 @@
 ﻿using System;
+using CoreGraphics;
 using CupcakePCL.BL;
 using UIKit;
 
@@ -21,6 +22,10 @@ namespace Cupcake.iOS.Screens
 
         public override void ViewDidLoad()
         {
+            View.BackgroundColor = UIColor.White;
+            View.Layer.BorderColor = UIColor.Black.CGColor;
+            View.Layer.BorderWidth = 1f;
+
             base.ViewDidLoad();
             SetBottomNavigation();
             buttonSave.TouchUpInside += buttonSave_TouchUpInside;
