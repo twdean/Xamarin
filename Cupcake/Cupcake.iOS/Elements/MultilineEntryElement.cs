@@ -40,16 +40,16 @@ namespace Cupcake.iOS.Elements
             c.AddSubview(ph);
 
             // create actual text view
-            UITextView v = new UITextView(new RectangleF(0 + (int)captionWidth, 0, containerWidth - (int)captionWidth, height - 12))
+            var v = new UITextView(new RectangleF(0 + (int)captionWidth, 0, containerWidth - (int)captionWidth, height - 12))
             {
                 Text = value ?? "",
-                TextAlignment = UITextAlignment.Left
+                TextAlignment = UITextAlignment.Left,
+                BackgroundColor = UIColor.Clear,
+                Font = UIFont.SystemFontOfSize(16),
+                AutocapitalizationType = UITextAutocapitalizationType.None,
+                KeyboardType = UIKeyboardType.EmailAddress,
+                AutocorrectionType = UITextAutocorrectionType.No
             };
-            v.BackgroundColor = UIColor.Clear;
-            v.Font = UIFont.SystemFontOfSize(16);
-            v.AutocapitalizationType = UITextAutocapitalizationType.None;
-            v.KeyboardType = UIKeyboardType.EmailAddress;
-            v.AutocorrectionType = UITextAutocorrectionType.No;
             v.Changed += (object sender, EventArgs e) =>
             {
                 if (string.IsNullOrEmpty(v.Text))

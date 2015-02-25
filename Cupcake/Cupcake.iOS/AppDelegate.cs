@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using CoreAnimation;
+using Cupcake.iOS.Screens;
 using CupcakePCL;
 using CupcakePCL.DL.SQLite;
 using Foundation;
@@ -15,7 +17,7 @@ namespace Cupcake.iOS
     {
         // class-level declarations
 		UIWindow window;
-		MainViewController mainViewController;
+        IdeaListViewController listViewController;
 
         public UINavigationController RootNavigationController { get; private set; }
 
@@ -44,8 +46,11 @@ namespace Cupcake.iOS
             
             // Styling
             UINavigationBar.Appearance.TintColor = UIColor.FromRGB(38, 117, 255); // nice blue
-            UITextAttributes ta = new UITextAttributes();
-            ta.Font = UIFont.FromName("AmericanTypewriter-Bold", 0f);
+            var ta = new UITextAttributes
+            {
+                Font = UIFont.FromName("AmericanTypewriter-Bold", 0f)
+            };
+
             UINavigationBar.Appearance.SetTitleTextAttributes(ta);
             ta.Font = UIFont.FromName("AmericanTypewriter", 0f);
             UIBarButtonItem.Appearance.SetTitleTextAttributes(ta, UIControlState.Normal);
@@ -53,16 +58,16 @@ namespace Cupcake.iOS
             var sqliteFilename = "CupcakeDB.db3";
             // we need to put in /Library/ on iOS5.1 to meet Apple's iCloud terms
             // (they don't want non-user-generated data in Documents)
-            string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
-            string libraryPath = Path.Combine(documentsPath, "../Library/"); // Library folder
+            var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal); // Documents folder
+            var libraryPath = Path.Combine(documentsPath, "../Library/"); // Library folder
             var path = Path.Combine(libraryPath, sqliteFilename);
             conn = new Connection(path);
             IdeaMgr = new CupcakePCL.BL.Managers.IdeaManager(conn);
 
+            var ideas = IdeaMgr.GetIdeas();
+            listViewController = new IdeaListViewController(ideas);
 
-            mainViewController = new MainViewController();
-
-            RootNavigationController.PushViewController(mainViewController, false);
+            RootNavigationController.PushViewController(listViewController, false);
             window.RootViewController = RootNavigationController;
 
             
