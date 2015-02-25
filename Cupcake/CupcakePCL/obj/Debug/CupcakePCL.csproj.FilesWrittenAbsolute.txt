@@ -1,0 +1,5 @@
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/CupcakePCL/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/CupcakePCL/bin/Debug/CupcakePCL.dll.mdb
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/CupcakePCL/bin/Debug/CupcakePCL.dll
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/CupcakePCL/obj/Debug/CupcakePCL.dll
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/CupcakePCL/obj/Debug/CupcakePCL.dll.mdb

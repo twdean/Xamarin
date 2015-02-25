@@ -46,6 +46,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -101,6 +103,10 @@
     </Compile>
     <Compile Include="Screens\NewIdeaViewController.cs" />
     <None Include="packages.config" />
+    <Compile Include="Screens\AddIdeaController.cs" />
+    <Compile Include="Screens\AddIdeaController.designer.cs">
+      <DependentUpon>AddIdeaController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -118,10 +124,11 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <InterfaceDefinition Include="Screens\MainViewController.xib" />
+    <InterfaceDefinition Include="Screens\AddIdeaController.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CupcakePCL\CupcakePCL.csproj">
-      <Project>{8d51d66e-06df-463c-93c3-b60634bbe920}</Project>
+      <Project>{8D51D66E-06DF-463C-93C3-B60634BBE920}</Project>
       <Name>CupcakePCL</Name>
     </ProjectReference>
   </ItemGroup>
