@@ -29,14 +29,9 @@ namespace Cupcake.iOS.Screens
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (lableTitle != null) {
-				lableTitle.Dispose ();
-				lableTitle = null;
-			}
-
-			if (textTitle != null) {
-				textTitle.Dispose ();
-				textTitle = null;
+			if (buttonSave != null) {
+				buttonSave.Dispose ();
+				buttonSave = null;
 			}
 
 			if (labelDescription != null) {
@@ -44,14 +39,19 @@ namespace Cupcake.iOS.Screens
 				labelDescription = null;
 			}
 
+			if (lableTitle != null) {
+				lableTitle.Dispose ();
+				lableTitle = null;
+			}
+
 			if (textDescription != null) {
 				textDescription.Dispose ();
 				textDescription = null;
 			}
 
-			if (buttonSave != null) {
-				buttonSave.Dispose ();
-				buttonSave = null;
+			if (textTitle != null) {
+				textTitle.Dispose ();
+				textTitle = null;
 			}
 		}
 	}

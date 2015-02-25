@@ -107,6 +107,15 @@
     <Compile Include="Screens\AddIdeaController.designer.cs">
       <DependentUpon>AddIdeaController.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppDelegate.designer.cs">
+      <DependentUpon>AppDelegate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\IdeaListViewSource.designer.cs">
+      <DependentUpon>IdeaListViewSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\IdeaListViewController.designer.cs">
+      <DependentUpon>IdeaListViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

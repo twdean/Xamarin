@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8F7BA8FC-6E43-4EE0-B31E-3D778165E4F1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Cupcake.iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FB486BA4D15D66560401295009FAEB228E31D9CA</key>
+		<string>https://github.com/twdean/Xamarin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Cupcake/Cupcake.iOS/obj/Xcode/0/Cupcake.iOS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FB486BA4D15D66560401295009FAEB228E31D9CA</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/twdean/Xamarin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FB486BA4D15D66560401295009FAEB228E31D9CA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB486BA4D15D66560401295009FAEB228E31D9CA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xamarin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
