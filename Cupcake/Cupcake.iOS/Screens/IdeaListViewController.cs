@@ -41,7 +41,7 @@ namespace Cupcake.iOS.Screens
 
             SetToolbarItems(new[] {
             new UIBarButtonItem(UIBarButtonSystemItem.Add, (s,e) => {
-                var addIdeaController = new NewIdeaViewController();
+                var addIdeaController = new AddIdeaController();
                 NavigationController.PushViewController(addIdeaController, true);
             })
             , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }

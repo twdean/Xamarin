@@ -7,7 +7,7 @@
 using Foundation;
 using System.CodeDom.Compiler;
 
-namespace Cupcake.iOS
+namespace Cupcake.iOS.Screens
 {
 	[Register ("AddIdeaController")]
 	partial class AddIdeaController

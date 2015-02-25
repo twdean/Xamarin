@@ -6,4 +6,5 @@ C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\bin\iPhoneSimulator\De
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\bin\iPhoneSimulator\Debug\CupcakePCL.pdb
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\bin\iPhoneSimulator\Debug\CupcakePCL.dll.mdb
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhoneSimulator\Debug\ibtool\MainViewController.nib
+C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhoneSimulator\Debug\ibtool\AddIdeaController.nib
 C:\Development\Level 9\Level9\Xamarin\Cupcake\Cupcake.iOS\obj\iPhoneSimulator\Debug\Default-568h@2x.png
