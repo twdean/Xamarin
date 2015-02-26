@@ -1,5 +1,6 @@
 /Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/ibtool/MainViewController.nib
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/ibtool/AddIdeaController.nib
+/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/ibtool/SelectedIdeaViewController.nib
 /Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/Default-568h@2x.png
 /Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/bin/iPhone/Debug/CupcakeiOS.exe.mdb
 /Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/bin/iPhone/Debug/CupcakeiOS.exe
