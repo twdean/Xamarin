@@ -97,10 +97,6 @@
     <Compile Include="SQLite.Implimentations.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screens\MainViewController.cs" />
-    <Compile Include="Screens\MainViewController.designer.cs">
-      <DependentUpon>MainViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screens\NewIdeaViewController.cs" />
     <None Include="packages.config" />
     <Compile Include="Screens\AddIdeaController.cs" />
@@ -115,6 +111,10 @@
     </Compile>
     <Compile Include="Screens\IdeaListViewController.designer.cs">
       <DependentUpon>IdeaListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\SelectedIdeaViewController.cs" />
+    <Compile Include="Screens\SelectedIdeaViewController.designer.cs">
+      <DependentUpon>SelectedIdeaViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -132,8 +132,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <InterfaceDefinition Include="Screens\MainViewController.xib" />
     <InterfaceDefinition Include="Screens\AddIdeaController.xib" />
+    <InterfaceDefinition Include="Screens\SelectedIdeaViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CupcakePCL\CupcakePCL.csproj">
