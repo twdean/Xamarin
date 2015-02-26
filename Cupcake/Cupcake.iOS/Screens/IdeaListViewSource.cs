@@ -46,7 +46,7 @@ namespace Cupcake.iOS.Screens
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
             var idea = _ideas[indexPath.Row];
-            var ideaViewController = new IdeaViewController(idea);
+            var ideaViewController = new SelectedIdeaViewController(idea);
 
             AppDelegate.Current.RootNavigationController.PushViewController(ideaViewController, true);
         }

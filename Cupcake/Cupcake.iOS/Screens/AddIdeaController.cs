@@ -30,6 +30,8 @@ namespace Cupcake.iOS.Screens
             textDescription.Text = "Add details here";
             textDescription.TextColor = UIColor.LightGray;
 
+            buttonSave.Layer.CornerRadius = 5f;
+
             
             base.ViewDidLoad();
 
