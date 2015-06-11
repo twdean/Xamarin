@@ -122,21 +122,6 @@
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
     <BundleResource Include="Resources\.DS_Store" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\.DS_Store" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\.DS_Store" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\AddIdeaController.nib" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\Entitlements.plist" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\Info.plist" />
-    <BundleResource Include="Resources\Build\Products\Cupcake\MonoTouch-iphonesimulator\Cupcake.iOS.app\SelectedIdeaViewController.nib" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\.DS_Store" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\.DS_Store" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\AddIdeaController.nib" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\Default-568h%402x.png" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\Entitlements.plist" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\Info.plist" />
-    <BundleResource Include="Resources\Build\Products\MonoTouch-iphonesimulator\Cupcake.iOS.app\SelectedIdeaViewController.nib" />
-    <BundleResource Include="Resources\Build\Intermediates\Cupcake\ArchiveIntermediates\Cupcake.iOS\BuildProductsPath\MonoTouch-iphoneos\Cupcake.iOS.app" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -159,4 +144,5 @@
       <Name>CupcakePCL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
 </Project>
