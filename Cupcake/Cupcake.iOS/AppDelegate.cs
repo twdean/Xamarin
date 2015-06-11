@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
-using CoreAnimation;
 using Cupcake.iOS.Screens;
-using CupcakePCL;
 using CupcakePCL.DL.SQLite;
 using Foundation;
 using UIKit;
