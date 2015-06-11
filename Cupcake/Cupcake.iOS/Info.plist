@@ -10,6 +10,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>SelectedIdeaViewController</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -21,6 +23,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>7.0</string>
+	<string>8.3</string>
 </dict>
 </plist>

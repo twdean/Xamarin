@@ -1,14 +1,11 @@
-﻿<Properties StartupItem="CupcakePCL/CupcakePCL.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Cupcake.iOS/Screens/AddIdeaController.cs">
-    <Files>
-      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Cupcake.iOS/Screens/IdeaListViewController.cs" Line="1" Column="1" />
-      <File FileName="Cupcake.iOS/Screens/AddIdeaController.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupItem="Cupcake.iOS/Cupcake.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Cupcake.iOS>
+    <IPhoneTestFlightSettings_27CDebug ApiToken="a0948954321f9bd4006cbbb8b08dbc5d_MjM2Njk1MTIwMTUtMDItMTcgMTQ6NDI6MDMuNTgyMjI0" TeamToken="1dd761fb234902c9c44ab581ee9c7f87_NDg5NjI5MjAxNS0wMi0xNyAxNDo0Mzo0MC44NDY2Mzc" ReleaseNotes="pre-release" NotifyTeamMembers="True" ReplaceBinaries="False" DistributionLists="" UploadDSYMs="False" />
+  </MonoDevelop.Ide.ItemProperties.Cupcake.iOS>
 </Properties>

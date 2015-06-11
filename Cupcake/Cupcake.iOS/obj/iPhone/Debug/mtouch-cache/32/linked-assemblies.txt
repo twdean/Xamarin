@@ -1,8 +1,0 @@
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/CupcakeiOS.exe
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/MonoTouch.Dialog-1.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/mscorlib.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Core.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.iOS.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Json.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/CupcakePCL.dll
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Cupcake.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.dll
