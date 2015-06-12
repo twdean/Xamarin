@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Cupcake.iOS/AppDelegate.cs">
     <Files>
-      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="66" Column="4" />
-      <File FileName="Cupcake.iOS/Main.cs" Line="20" Column="2" />
+      <File FileName="Cupcake.iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="57" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
