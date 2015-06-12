@@ -91,7 +91,6 @@
     <Compile Include="Elements\MultilineEntryElement.cs" />
     <Compile Include="IOSConnectivity.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="AppDelegate.cs" />
     <Compile Include="reachability.cs" />
     <Compile Include="Screens\IdeaListViewSource.cs" />
     <Compile Include="Screens\IdeaViewController.cs" />
@@ -102,9 +101,6 @@
     <Compile Include="Screens\AddIdeaController.cs" />
     <Compile Include="Screens\AddIdeaController.designer.cs">
       <DependentUpon>AddIdeaController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AppDelegate.designer.cs">
-      <DependentUpon>AppDelegate.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\IdeaListViewSource.designer.cs">
       <DependentUpon>IdeaListViewSource.cs</DependentUpon>
@@ -118,6 +114,7 @@
     </Compile>
     <None Include="RELEASE-NOTES.txt" />
     <None Include="Info.plist" />
+    <Compile Include="AppDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

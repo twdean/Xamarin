@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Cupcake.iOS/Cupcake.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Cupcake.iOS/AppDelegate.cs">
+    <Files>
+      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="66" Column="4" />
+      <File FileName="Cupcake.iOS/Main.cs" Line="20" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Cupcake.iOS>
-    <IPhoneTestFlightSettings_27CDebug ApiToken="a0948954321f9bd4006cbbb8b08dbc5d_MjM2Njk1MTIwMTUtMDItMTcgMTQ6NDI6MDMuNTgyMjI0" TeamToken="1dd761fb234902c9c44ab581ee9c7f87_NDg5NjI5MjAxNS0wMi0xNyAxNDo0Mzo0MC44NDY2Mzc" ReleaseNotes="pre-release" NotifyTeamMembers="True" ReplaceBinaries="False" DistributionLists="" UploadDSYMs="False" />
-  </MonoDevelop.Ide.ItemProperties.Cupcake.iOS>
 </Properties>
