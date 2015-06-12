@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{29A821F2-8ED8-43EF-AA03-00D02CDFAAFD}</ProjectGuid>
+    <ProjectGuid>{6EA72472-7CB8-489A-8F73-758AB88B3239}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Cupcake_new.iOS</RootNamespace>
+    <RootNamespace>Test.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Cupcake_newiOS</AssemblyName>
+    <AssemblyName>TestiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,40 +84,16 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Elements\MultilineEntryElement.cs" />
-    <Compile Include="IOSConnectivity.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="reachability.cs" />
-    <Compile Include="Screens\AddIdeaController.cs" />
-    <Compile Include="Screens\AddIdeaController.designer.cs">
-      <DependentUpon>AddIdeaController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\IdeaListViewController.cs" />
-    <Compile Include="Screens\IdeaListViewController.designer.cs">
-      <DependentUpon>IdeaListViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\IdeaListViewSource.cs" />
-    <Compile Include="Screens\IdeaListViewSource.designer.cs">
-      <DependentUpon>IdeaListViewSource.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Screens\IdeaViewController.cs" />
-    <Compile Include="Screens\SelectedIdeaViewController.cs" />
-    <Compile Include="Screens\SelectedIdeaViewController.designer.cs">
-      <DependentUpon>SelectedIdeaViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SQLite.Implimentations.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <InterfaceDefinition Include="Screens\AddIdeaController.xib" />
-    <InterfaceDefinition Include="Screens\SelectedIdeaViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h@2x.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MonoTouch.Dialog-1" />
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -125,12 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CupcakePCL\CupcakePCL.csproj">
-      <Project>{8d51d66e-06df-463c-93c3-b60634bbe920}</Project>
-      <Name>CupcakePCL</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

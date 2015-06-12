@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Cupcake.iOS
+namespace Test.iOS
 {
     public class Application
     {
