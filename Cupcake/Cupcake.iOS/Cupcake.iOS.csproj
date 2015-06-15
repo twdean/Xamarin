@@ -108,7 +108,6 @@
     </Compile>
     <Compile Include="SQLite.Implimentations.cs" />
     <None Include="GettingStarted.Xamarin" />
-    <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <InterfaceDefinition Include="Screens\AddIdeaController.xib" />
     <InterfaceDefinition Include="Screens\SelectedIdeaViewController.xib" />
@@ -125,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
+    <Content Include="Info.plist" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CupcakePCL\CupcakePCL.csproj">
