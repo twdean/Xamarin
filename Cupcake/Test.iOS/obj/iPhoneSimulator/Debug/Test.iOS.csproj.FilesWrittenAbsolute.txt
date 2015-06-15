@@ -1,7 +1,0 @@
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/obj/iPhoneSimulator/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/obj/iPhoneSimulator/Debug/ibtool/myViewController.nib
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/obj/iPhoneSimulator/Debug/Default-568h@2x.png
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/bin/iPhoneSimulator/Debug/TestiOS.exe.mdb
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/bin/iPhoneSimulator/Debug/TestiOS.exe
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/obj/iPhoneSimulator/Debug/TestiOS.exe
-/Users/trevordean/Documents/Development/Level 9/Xamarin/Cupcake/Test.iOS/obj/iPhoneSimulator/Debug/TestiOS.exe.mdb
