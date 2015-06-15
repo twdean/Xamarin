@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -18,10 +20,10 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.level9.Playground.iOS</string>
 	<key>CFBundleShortVersionString</key>
-	<string></string>
+	<string>4.0</string>
 	<key>CFBundleVersion</key>
-	<string></string>
-	<key>MinimumOSVersion</key>
-	<string></string>
+	<string>4.0</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
 </dict>
 </plist>

@@ -1,14 +1,6 @@
 ﻿<Properties StartupItem="Cupcake.iOS/Cupcake.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.3" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test.iOS/Main.cs">
-    <Files>
-      <File FileName="Cupcake.iOS/Main.cs" Line="1" Column="1" />
-      <File FileName="Cupcake.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Test.iOS/Screens/myViewController.cs" Line="32" Column="1" />
-      <File FileName="Test.iOS/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="Test.iOS/Main.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
