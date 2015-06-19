@@ -89,13 +89,17 @@ namespace Cupcake.iOS
                     NavigationController.PushViewController(listViewController, true);
                 })
                 , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }
-                , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => {
-
-                })
+                , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => UploadIdea())
             }, false);
 
             NavigationController.ToolbarHidden = false;
         }
+
+        public void UploadIdea()
+        {
+            new UIAlertView("Saved", "Your idea has been saved", null, "ok", null).Show();
+        }
+
 
         public void SaveIdea(string title, string desc, bool isPublic)
         {

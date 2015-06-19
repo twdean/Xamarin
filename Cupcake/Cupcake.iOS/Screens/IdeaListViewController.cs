@@ -45,9 +45,6 @@ namespace Cupcake.iOS.Screens
                 NavigationController.PushViewController(addIdeaController, true);
             })
             , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }
-            , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => {
-
-            })
         }, false);
 
             NavigationController.ToolbarHidden = false;

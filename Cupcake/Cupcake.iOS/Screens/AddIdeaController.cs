@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Net.Mime;
-using CoreGraphics;
 using CupcakePCL.BL;
 using UIKit;
 
@@ -41,6 +39,8 @@ namespace Cupcake.iOS.Screens
             buttonSave.TouchUpInside += buttonSave_TouchUpInside;
             textDescription.Started += textDescription_Started;
             textDescription.Ended += textDescription_Ended;
+            
+            
 
             // Perform any additional setup after loading the view, typically from a nib.
         }
@@ -78,8 +78,9 @@ namespace Cupcake.iOS.Screens
                     NavigationController.PushViewController(listViewController, true);
                 })
                 , new UIBarButtonItem(UIBarButtonSystemItem.FlexibleSpace) { Width = 50 }
-                , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s,e) => {
-
+                , new UIBarButtonItem(UIBarButtonSystemItem.Action, (s, e) =>
+                {
+                    
                 })
             }, false);
 
@@ -97,7 +98,7 @@ namespace Cupcake.iOS.Screens
                     IsPublic = isPublic
                 }, new IOSConnectivity());
 
-                new UIAlertView("Saved", "Your idea has been saved", null, "ok", null).Show();
+                new UIAlertView("Upload", "Your idea has been uploaded", null, "ok", null).Show();
 
                 var ideas = AppDelegate.Current.IdeaMgr.GetIdeas();
 
